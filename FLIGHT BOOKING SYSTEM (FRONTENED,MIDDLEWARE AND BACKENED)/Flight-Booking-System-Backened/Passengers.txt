@@ -1,0 +1,37 @@
+Flight Booking System
+_________________________________
+
+db.createCollection("Passenger")
+
+db.Passenger.insertMany([{
+"userId":"anjan456",
+"name":"Anjana Banerjee",
+"email":"anjan125@gmail.com",
+"password":"125648@",
+"gender":"Female",
+"DOB":"26/01/1994",
+"city":"Howrah"},
+{
+"userId":"ram157",
+"name":"Lakhan Singh Rajput",
+"email":"lakhanrajput@gmail.com",
+"password":"156328",
+"gender":"Male",
+"DOB":"12/01/1943",
+"city":"Delhi"},
+{
+"userId":"Onkar123",
+"name":"Onkar Deshpande",
+"email":"desh.onkar15@gmail.com",
+"password":"onk@1*2#3",
+"gender":"Male",
+"DOB":"25/05/1982",
+"city":"Mumbai"},
+{"userId":"Leena1235",
+"name":"Leena Mondal",
+"email":"leena.mondal.2@gmail.com",
+"password":"152648",
+"gender":"Female",
+"DOB":"31/12/1997",
+"city":"Kolkata"}
+])

@@ -1,0 +1,56 @@
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<!------<div class="container">
+    <div class="row">
+        <div id="custom-search-input">
+            <div class="input-group col-md-12" style="text-align: center">
+                <input type="text" class="search-query form-control" placeholder="Search With Train id"  name="train_no" [(ngModel)]="trains.train_no"/>
+                <span class="input-group-btn">
+                    <button class="btn btn-danger" type="button" (click)="findTrainByTrain_no()">
+                        <span class=" glyphicon glyphicon-search"></span>
+                    </button>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>------>
+<div class="container">
+    <div class="row col-md-offset-2 custyle">
+        <table class="table table-striped custab">
+            <thead>
+                <tr>
+                    <th>Flight No.</th>
+                    <th>Flight Name</th>
+                    <th>Arrival Time</th>
+                    <th>Departure Time</th>
+                    <th>Travelling From</th>
+                    <th>Travelling To</th>
+                    <th>Fare</th>
+                    <th>Date Of Travel</th>
+                    <th>Total Distance</th>
+                    <th>Available Seats</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let flight of flights">
+                    
+                    <td>{{flight.flight_number}}</td>
+                    <td>{{flight.flight_name}}</td>
+                    <td>{{flight.arrival_time}}</td>
+                    <td>{{flight.departure_time}}</td>
+                    <td>{{flight.traveling_from}}</td>
+                    <td>{{flight.traveling_to}}</td>
+                    <td>{{flight.flight_fare_in_rupees}}</td>
+                    <td>{{flight.date_of_travel}}</td>
+                    <td>{{flight.distance_in_km}}</td>
+                    <td>{{flight.number_of_available_seats}}</td>
+                    <td class="text-center"><button class="btn btn-danger btn-xs" (click)="deleteFlight(flight.flight_number)"><span class="glyphicon glyphicon-remove"></span> Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

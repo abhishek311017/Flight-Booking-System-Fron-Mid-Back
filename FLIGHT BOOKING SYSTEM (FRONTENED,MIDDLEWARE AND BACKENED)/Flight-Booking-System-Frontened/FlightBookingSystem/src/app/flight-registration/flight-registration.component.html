@@ -1,0 +1,78 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<div style="text-align: center">
+    <h1>{{message}}</h1>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <form>
+                <fieldset>
+                    <legend class="text-center">Valid information is required to register. <span class="req"><small>
+                                required *</small></span></legend>
+                    <div class="form-group">
+                        <label for="flight_number"><span class="req">* </span> Flight No: <small>Flight No:</small> </label>
+                        <input required type="text" [(ngModel)]="flight.flight_number" name="flight_number" id="flight_no"
+                            class="form-control phone" maxlength="8" placeholder="Enter Flight No." />
+                    </div>
+                    <div class="form-group">
+                        <label for="flight_name"><span class="req">* </span> Flight No: <small>Flight No:</small> </label>
+                        <input required type="text" [(ngModel)]="flight.flight_name" name="flight_name" id="flight_name"
+                            class="form-control phone" maxlength="8" placeholder="Enter Flight Name" />
+                    </div>
+  
+                    <div class="form-group">
+                        <label for="arrival_time"><span class="req">* </span> Arrival Time: </label>
+                        <input class="form-control" type="text" [(ngModel)]="flight.arrival_time" name="arrival_time" id="txt" required
+                            placeholder="Enter Flight Arrival Time" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="departure_time"><span class="req">* </span> Departure Time: </label>
+                        <input class="form-control" type="text" [(ngModel)]="flight.departure_time" name="departure_time" id="txt" required placeholder="Enter Flight departure Time" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="traveling_from"><span class="req">* </span> Starting Station: </label>
+                        <input class="form-control" type="text" [(ngModel)]="flight.traveling_from" name="traveling_from" id="txt" required placeholder="Enter Flight starting station" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="traveling_to"><span class="req">* </span> Destination </label>
+                        <input class="form-control" type="text" [(ngModel)]="flight.traveling_to" name="traveling_to" id="txt" required placeholder="Enter Flight destination" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="flight_fare_in_rupees"><span class="req">* </span>  Fare: </label>
+                        <input class="form-control" type="text" [(ngModel)]="flight.flight_fare_in_rupees" name="flight_fare_in_rupees" id="txt" required placeholder="Enter Flight fare:" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="distance_in_km"><span class="req">* </span>  Distance: </label>
+                        <input class="form-control" type="text" [(ngModel)]="flight.distance_in_km" name="distance_in_km" id="txt" required placeholder="Enter Train Journey Time:" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="number_of_available_seats"><span class="req">* </span> Number of seats : </label>
+                        <input class="form-control" type="text" [(ngModel)]="flight.number_of_available_seats" name="number_of_available_seats" id="txt"
+                            placeholder="Number of seats" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date_of_travel"><span class="req">* </span> Date of travel: </label>
+                        <input class="form-control" required type="text" [(ngModel)]="flight.date_of_travel" name="date_of_travel"
+                            id="date_of_travel" placeholder="Date of Travel" />
+                        <div class="status" id="status"></div>
+                    </div>
+                    <div class="form-group">
+                        <input class="btn btn-success" type="submit" name="submit_reg" value="Register" (click)="registerNow()">
+                    </div>
+                </fieldset>
+            </form>
+            
+        </div>
+
+    </div>
+</div>

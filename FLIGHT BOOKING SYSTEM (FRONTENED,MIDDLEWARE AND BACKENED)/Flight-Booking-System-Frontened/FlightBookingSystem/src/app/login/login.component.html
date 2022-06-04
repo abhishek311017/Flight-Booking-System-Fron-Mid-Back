@@ -1,0 +1,20 @@
+<div class="body">
+	<div class="grad">
+		<div class="header">
+			<div>OverSeas<span>Airways</span></div>
+		</div>
+		<br>
+        <form id="accesspanel" action="login" method="post">
+            <div class="login">
+           
+                <h1 id="litheader">Admin</h1>
+                <input type="text" placeholder="username" [(ngModel)]="username" id="email" name="user"><br>
+				<input type="password" placeholder="password" [(ngModel)]="password" id="password" name="password"><br>
+                <p style="margin-left: 102px;margin-top: 15px;">
+				    <input type="submit" name="Login" id="go" value="Login" (click)="doLogin()">
+                </p>
+                
+	        </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="row col-md-offset-2 custyle">
+        <table class="table table-striped custab">
+            <thead>
+                <tr>
+                    <th>Flight No.</th>
+                    <th>Flight Name</th>
+                    <th>Arrival Time</th>
+                    <th>Departure Time</th>
+                    <th>Travelling From</th>
+                    <th>Travelling To</th>
+                    <th>Fare</th>
+                    <th>Date Of Travel</th>
+                    <th>Total Distance</th>
+                    <th>Available Seats</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let flight of flights">
+                    
+                    <td>{{flight.flight_number}}</td>
+                    <td>{{flight.flight_name}}</td>
+                    <td>{{flight.arrival_time}}</td>
+                    <td>{{flight.departure_time}}</td>
+                    <td>{{flight.traveling_from}}</td>
+                    <td>{{flight.traveling_to}}</td>
+                    <td>{{flight.flight_fare_in_rupees}}</td>
+                    <td>{{flight.date_of_travel}}</td>
+                    <td>{{flight.distance_in_km}}</td>
+                    <td>{{flight.number_of_available_seats}}</td>
+                    <td class="text-center"><button class="btn btn info btn-xs" (click)="bookNow()"><span class="glyphicon glyphicon-remove"></span> Booking</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

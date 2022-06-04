@@ -1,0 +1,19 @@
+Flight Booking System
+________________________________
+
+db.Admin.insertMany([{
+"name":"Rahul Singh",
+"userId":"rahul31",
+"email":"rahul123@gmail.com",
+"password":"Rahul156@"},
+{
+"name":"Gunjan seth",
+"userId":"gun45",
+"email":"gunjan45@gmail.com",
+"password":"1556"},
+{
+"name":"Abhishek Singh Rajput",
+"userId":"rajput123",
+"email":"singh12rajput@gmail.com",
+"password":"7685"}
+])

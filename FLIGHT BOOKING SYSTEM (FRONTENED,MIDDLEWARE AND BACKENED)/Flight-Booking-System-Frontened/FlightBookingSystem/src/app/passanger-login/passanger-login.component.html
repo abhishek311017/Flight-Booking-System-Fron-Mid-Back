@@ -1,0 +1,17 @@
+<div id="fullscreen_bg" class="fullscreen_bg">
+
+    <div class="container">
+    
+        <form class="form-signin">
+            <h1 class="form-signin-heading text-muted">Sign In</h1>
+            <input type="text" class="form-control" placeholder="User Id" [(ngModel)]="email" name="email" required="" autofocus="">
+            <input type="password" class="form-control" [(ngModel)]="password"  name="password" placeholder="Password" required="">
+            <button class="btn btn-lg btn-primary btn-block" type="submit" (click)="doLogin()">
+                Log In
+            </button>
+            <button class="btn1 btn-lg btn-primary btn-block" type="submit" [routerLink]="['/passenger/registration']" routerLinkActive="router-link-active"   >
+                Create an Account
+            </button>
+        </form>
+    
+    </div>

@@ -1,0 +1,52 @@
+Flight Booking System
+___________________________________
+
+db.createCollection("flight")
+
+db.flight.insertMany([{"flight_number":"C1564",
+"flight_name":"Indigo",
+"traveling_from":"Chennei",
+"traveling_to":"Mumbai",
+"flight_fare_in_rupees":7599,
+"departure_time":{"$date":"2021-01-30T14:00:00.000Z"},
+"arrival_time":{"$date":"2021-01-30T16:00:00.000Z"},
+"distance_in_km ":1031,
+"number_of_available_seats":25},
+{"flight_number":"c1254",
+"flight_name":"Air India",
+"traveling_from":"Kolkata",
+"traveling_to":"Delhi",
+"flight_fare_in_rupees":6999,
+"departure_time":{"$date":"2021-01-31T18:30:00.000Z"},
+"arrival_time":{"$date":"2021-01-31T20:30:00.000Z"},
+"distance_in_km":1311,
+"number_of_available_seats":20},
+{
+"pnr_number": "19002548654654",
+"coach_no": "A2",
+"seat_no": "065-A1",
+"journey_time": "16 hours",
+"boarding_station": "Sealdah",
+"destination": "Bangalore",
+"booking_time": "2021-06-19T13:21:55.000",
+"boarding_time": "2021-07-02T13:21:55.000"
+},
+{"flight_number":"c1523",
+"flight_name":"SpiceJet",
+"traveling_from":"Chennei",
+"traveling_to":"Mumbai",
+"flight_fare_in_rupees":5999,
+"departure_time":{"$date":"2021-01-30T18:30:00.000Z"},
+"arrival_time":{"$date":"2021-01-30T20:00:00.000Z"},
+"distance_in_km":1031,
+"number_of_available_seats":15},
+{"flight_number":"d2546",
+"flight_name":"Vistara",
+"traveling_from":"Pune",
+"traveling_to":"Banglore",
+"flight_fare_in_rupees":7999,
+"departure_time":{"$date":"2021-01-30T18:30:00.000Z"},
+"arrival_time":{"$date":"2021-01-30T19:45:00.000Z"},
+"distance_in_km":720,
+"number_of_available_seats":5}])
+
